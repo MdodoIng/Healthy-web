@@ -329,6 +329,10 @@ iframe.w-full.rounded-2xl {
     background-color: #000;
     top: 15%;
     right: -5px;
+
+    @media (width>=480px) {
+        display: none;
+    }
 }
 
 .m_r10 {
@@ -682,8 +686,6 @@ iframe.w-full.rounded-2xl {
 
 .icon_titl {
     height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .icon_hdr {
@@ -982,6 +984,7 @@ iframe.w-full.rounded-2xl {
     .header_em {
         margin-left: -207px;
         font-size: 13px;
+        text-align: center !important;
     }
 
     .headr_l {

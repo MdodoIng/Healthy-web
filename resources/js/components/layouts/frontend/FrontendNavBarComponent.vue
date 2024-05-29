@@ -2,7 +2,7 @@
     <header
         :class="
             isSticky === true
-                ? 'fixed top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white'
+                ? 'absolute top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white'
                 : 'mb-5 sm:mb-8 bg-white'
         "
     >
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="container py-3.5 px-4 lg:py-2">
+        <div class="container py-3.5 px-4">
             <div class="flex items-center justify-between gap-5">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
@@ -97,7 +97,7 @@
                 <div class="header-right header_list headr_l">
                     <span>
                         <h2 class="f_22">015168734</h2>
-                        <p class="fzee">support 24x7</p>
+                        <p class="fzee leading-[100%]">support 24x7</p>
                     </span>
                 </div>
 
@@ -402,7 +402,7 @@
                             {{ $t("label.categories") }}
                         </button>
                         <div
-                            class="fixed top-[165px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
+                            class="fixed top-[182px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
                         >
                             <div class="container">
                                 <div
@@ -460,7 +460,7 @@
                                                         class="self-start"
                                                     >
                                                         <h3
-                                                            class="text-sm font-semibold capitalize pb-3 border-slate-200 pl-3 pt-3"
+                                                            class="text-[15px] font-semibold capitalize pb-3 border-slate-200 pl-3 pt-3"
                                                         >
                                                             <router-link
                                                                 :to="{
