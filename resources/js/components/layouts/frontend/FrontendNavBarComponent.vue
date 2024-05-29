@@ -2,7 +2,7 @@
     <header
         :class="
             isSticky === true
-                ? 'absolute top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white'
+                ? 'top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white'
                 : 'mb-5 sm:mb-8 bg-white'
         "
     >
@@ -40,13 +40,13 @@
             </div>
         </div>
 
-        <div class="container py-3.5 px-4">
+        <div class="container py-[18px] px-4">
             <div class="flex items-center justify-between gap-5">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
                     <button
                         type="button"
-                        class="leading-none block lg:hidden"
+                        class="leading-none hidden"
                         @click.prevent="
                             showTarget('mobile-sidebar-canvas', 'canvas-active')
                         "
@@ -69,7 +69,7 @@
 
                 <button
                     type="button"
-                    class="leading-none block lg:hidden"
+                    class="leading-none text-sm font-medium capitalize mb-1 underline text-primaryhidden"
                     @click.prevent="showTarget('search', 'search-active')"
                 >
                     <i class="lab-line-search text-xl"></i>
@@ -376,7 +376,7 @@
             </div>
         </div>
 
-        <div class="container py-3.5 px-4 lg:py-0">
+        <div class="container py-3.5 px-4 lg:py-0 hidden lg:block">
             <!-- MenuBar Start -->
             <nav class="header-nav hidden lg:block">
                 <ul class="header-nav-list">

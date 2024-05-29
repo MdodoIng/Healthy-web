@@ -69,7 +69,7 @@
             </router-link>
         </div>
 
-        <div class="px-3 sm:px-0 pt-4 pb-2">
+        <div class="px-3 sm:px-4 pt-4 pb-2 bg-[#ebebeb] rounded-[10px]">
             <h3
                 class="capitalize text-bs font-semibold whitespace-nowrap transition-all duration-300 hover:text-primary"
             >

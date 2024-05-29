@@ -693,7 +693,9 @@ iframe.w-full.rounded-2xl {
     display: inline-block;
     padding-right: 5px;
     margin-bottom: 3px;
+
 }
+
 
 .icon_ftr {
     height: 20px;
@@ -872,7 +874,7 @@ iframe.w-full.rounded-2xl {
 
 .browse::after {
     content: "";
-    width: 4%;
+    width: 54px;
     position: relative;
     display: block;
     height: 3px;
@@ -1014,8 +1016,13 @@ iframe.w-full.rounded-2xl {
 
 @media only screen and (min-width: 0px) and (max-width: 498px) {
     .header_em {
-        margin-left: -181px;
-        font-size: 11px;
+        margin-left: -151px;
+        font-size: 9px;
+    }
+
+    .icon_hdr {
+        height: 15px;
+
     }
 
     .w-3 {

@@ -3,7 +3,7 @@
     <section class="mb-12">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 md:pb-10">
                     <CategoryBreadcrumbComponent :categories="categories" />
                 </div>
 
@@ -20,7 +20,7 @@
                             <SwiperSlide
                                 v-for="(image, index) in images"
                                 :key="index"
-                                class="w-full"
+                                class="w-full p-[26px] rounded-[14px] bg-[#cefff5]"
                             >
                                 <img
                                     class="w-full rounded-2xl"
@@ -44,7 +44,7 @@
                             <SwiperSlide
                                 v-for="(image, index) in images"
                                 :key="index"
-                                class="w-full cursor-pointer rounded-lg border border-gray-200 transition-all duration-500"
+                                class="w-full cursor-pointer rounded-lg border border-gray-200 transition-all duration-500 p-[10px]"
                             >
                                 <img
                                     class="w-full rounded-lg border-2 border-gray-200 transition-all duration-500"
