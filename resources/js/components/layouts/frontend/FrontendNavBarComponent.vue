@@ -163,7 +163,7 @@
                         src="public/images/default/icon/star.svg"
                     />
                     <span>
-                        <h6 class="hd_txt">Wishlist</h6>
+                        <h6 class="hd_txt leading-[100%]">Wishlist</h6>
                     </span>
                     <span
                         v-if="wishlists.length > 0"
@@ -182,7 +182,7 @@
                             src="public/images/default/icon/user.svg"
                         />
                         <span class="">
-                            <h6 class="hd_txt">Account</h6>
+                            <h6 class="hd_txt leading-[100%]">Account</h6>
                         </span>
                     </button>
                     <div
@@ -402,7 +402,7 @@
                             {{ $t("label.categories") }}
                         </button>
                         <div
-                            class="fixed top-[213px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
+                            class="fixed top-[165px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
                         >
                             <div class="container">
                                 <div

@@ -16,7 +16,7 @@
             >
                 <SwiperSlide
                     v-for="category in categories"
-                    class="mobile:!w-24"
+                    class="mobile:!w-36"
                 >
                     <router-link
                         :to="{

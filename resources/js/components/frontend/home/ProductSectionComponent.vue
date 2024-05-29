@@ -22,8 +22,8 @@
         <div v-for="(promotion, promotionKey) in promotions" class="p-0 m-0">
             <section v-if="key === promotionKey" class="mb-10 sm:mb-20">
                 <div class="container">
-                    <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}">
-                        <img class="w-full rounded-3xl" :src="promotion.preview" alt="promotion" loading="lazy">
+                    <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}" class="w-full max-md:aspect-video">
+                        <img class="w-full rounded-3xl object-cover h-full" :src="promotion.preview" alt="promotion" loading="lazy">
                     </router-link>
                 </div>
             </section>

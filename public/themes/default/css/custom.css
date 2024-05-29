@@ -406,8 +406,7 @@ iframe.w-full.rounded-2xl {
     border: 1px solid #cacaca;
     color: #7a7a7a;
     font-weight: 500;
-    padding: 15px 135px 15px 20px;
-    height: 42px;
+    padding: 4px 20px;
     border-radius: 11px;
 
 }
