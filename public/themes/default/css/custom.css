@@ -464,7 +464,7 @@ iframe.w-full.rounded-2xl {
 }
 
 .bg-clr {
-    background: linear-gradient(204deg, rgb(208 220 255) 0%, #00ffbc 100%) !important;
+    /* background: linear-gradient(204deg, rgb(208 220 255) 0%, #00ffbc 100%) !important; */
 }
 
 .footer-social ul {

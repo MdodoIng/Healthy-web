@@ -2,7 +2,7 @@
     <div
         v-if="products.length > 0"
         v-for="product in products"
-        class="sm:p-2 rounded-2xl sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group product_bxx"
+        class="sm:p-2 rounded-2xl sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group product_bxx grid"
     >
         <div class="relative overflow-hidden rounded-xl isolate">
             <label
@@ -69,7 +69,7 @@
             </router-link>
         </div>
 
-        <div class="px-4 sm:px-4 pt-4 pb-2 bg-[#BFFFE5] rounded-[10px] grid">
+        <div class="px-2 sm:px-4 py-4 bg-[#BFFFE5] rounded-[10px] grid">
             <h3
                 class="capitalize text-[15px] font-semibold line-clamp-2 transition-all duration-300 hover:text-primary"
             >
