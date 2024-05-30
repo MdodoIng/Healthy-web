@@ -69,7 +69,7 @@
 
                 <button
                     type="button"
-                    class="leading-none text-sm font-medium capitalize mb-1 underline text-primaryhidden"
+                    class="leading-none text-sm font-medium capitalize mb-1 underline text-primary hidden"
                     @click.prevent="showTarget('search', 'search-active')"
                 >
                     <i class="lab-line-search text-xl"></i>
@@ -317,7 +317,7 @@
                             >
                                 <img
                                     class="account-icn"
-                                    src="public/images/default/icon/sign-out-alt.svg"
+                                    src="public/images/default/i con/sign-out-alt.svg"
                                 />
                                 <span
                                     class="text-sm font-medium capitalize whitespace-nowrap"

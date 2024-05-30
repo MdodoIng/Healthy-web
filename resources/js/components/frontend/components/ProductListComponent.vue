@@ -69,9 +69,9 @@
             </router-link>
         </div>
 
-        <div class="px-3 sm:px-4 pt-4 pb-2 bg-[#ebebeb] rounded-[10px]">
+        <div class="px-4 sm:px-4 pt-4 pb-2 bg-[#BFFFE5] rounded-[10px] grid">
             <h3
-                class="capitalize text-bs font-semibold whitespace-nowrap transition-all duration-300 hover:text-primary"
+                class="capitalize text-[15px] font-semibold line-clamp-2 transition-all duration-300 hover:text-primary"
             >
                 <router-link
                     class="block overflow-hidden text-ellipsis"
