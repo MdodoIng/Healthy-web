@@ -11,7 +11,7 @@
                     class="w-full max-w-[350px] relative lg:pl-9 del-bx"
                 >
                     <img
-                        :src="benefit.thumb"
+                        :src="benefit.cover"
                         alt="benefit"
                         width="60"
                         height="60"

@@ -14,7 +14,7 @@
             <Swiper dir="ltr" :speed="1000" class="ad-swiper" :breakpoints="breakpoints">
                 <SwiperSlide v-for="promotion in promotions" class="mobile:!w-52 sm:!h-[450px] !h-[274px]">
                     <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}" class=" w-full h-full">
-                        <img class="w-full block rounded-2xl h-full object-cover" :src="promotion.cover" alt="promotion" loading="lazy">
+                        <img class="w-full block rounded-2xl h-full object-cover" :src="promotion.preview" alt="promotion" loading="lazy">
                     </router-link>
                 </SwiperSlide>
             </Swiper>
