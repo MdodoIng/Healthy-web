@@ -1,17 +1,26 @@
 <template>
-    <LoadingComponent :props="loading"/>
+    <LoadingComponent :props="loading" />
     <section v-if="products.length > 0" class="mb-10 sm:mb-20">
         <div class="container">
             <div class="flex items-center justify-between gap-4 mb-5 sm:mb-7">
                 <h2 class="text-2xl sm:text-4xl font-bold capitalize mb-5 adr">
-                    {{ $t('label.flash_sale') }}
+                    {{ $t("label.flash_sale") }}
                 </h2>
-                <router-link v-if="products.length === 8" :to="{name: 'frontend.flashSale.products'}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 rounded-3xl capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
-                    {{ $t('label.show_more') }}
+                <router-link
+                    v-if="products.length === 8"
+                    :to="{ name: 'frontend.flashSale.products' }"
+                    class="py-2 px-4 text-sm sm:py-3 sm:px-6 capitalize sm:text-base font-semibold whitespace-nowrap text-primary transition-all duration-300 hover:bg-primary hover:text-white bg-[#71e7ad] rounded-lg"
+                >
+                    {{ $t("label.show_more") }}
                 </router-link>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                <ProductListComponent v-if="products.length > 0" :products="products"/>
+            <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
+            >
+                <ProductListComponent
+                    v-if="products.length > 0"
+                    :products="products"
+                />
             </div>
         </div>
     </section>
@@ -25,14 +34,14 @@ export default {
     name: "FlashSaleComponent",
     components: {
         ProductListComponent,
-        LoadingComponent
+        LoadingComponent,
     },
     data() {
         return {
             loading: {
                 isActive: false,
-            }
-        }
+            },
+        };
     },
     computed: {
         products: function () {
@@ -41,14 +50,17 @@ export default {
     },
     mounted() {
         this.loading.isActive = true;
-        this.$store.dispatch("frontendProduct/flashSaleProducts", {
-            paginate: 0,
-            rand: 8
-        }).then(res => {
-            this.loading.isActive = false;
-        }).catch((err) => {
-            this.loading.isActive = false;
-        });
+        this.$store
+            .dispatch("frontendProduct/flashSaleProducts", {
+                paginate: 0,
+                rand: 8,
+            })
+            .then((res) => {
+                this.loading.isActive = false;
+            })
+            .catch((err) => {
+                this.loading.isActive = false;
+            });
     },
-}
+};
 </script>

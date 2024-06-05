@@ -217,7 +217,7 @@
                                         ? 'bg-primary'
                                         : ''
                                 "
-                                class="flex items-center gap-3 px-8 h-12 leading-12 radius-10 transition-all duration-500 bg-slate-400 text-black hover:bg-primary"
+                                class="flex items-center gap-3 px-8 h-12 leading-12 radius-10 transition-all duration-500 bg-slate-400 text-black hover:bg-primary border border-transparent hover:border-black"
                             >
                                 <img
                                     class="icon_titl"
@@ -326,7 +326,7 @@
                                         'tab_videos'
                                     )
                                 "
-                                class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
+                                class="tab-btn text-sm sm:text-base font-normal leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.videos") }}
                             </button>
@@ -341,7 +341,7 @@
                                         'tab_reviews'
                                     )
                                 "
-                                class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
+                                class="tab-btn text-sm sm:text-base font-normal leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.reviews") }}
                             </button>
@@ -355,7 +355,7 @@
                                         'tab_shipping_and_return'
                                     )
                                 "
-                                class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
+                                class="tab-btn text-sm sm:text-base font-normal leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.shipping_and_return") }}
                             </button>

@@ -7,9 +7,9 @@
         --primary: #016d6d;
         --primary-light: 255 237 244;
         --primary-slate: #b8f0e1;
-        --client-font: 'Product Sans'
-            /*--client-font: 'Urbanist', sans-serif;*/
-            --admin-font: 'Public Sans', sans-serif;
+        --client-font: 'Product Sans';
+        /*--client-font: 'Urbanist', sans-serif;*/
+        --admin-font: 'Public Sans', sans-serif;
         --icon-font: 'Iconly';
     }
 
@@ -1603,6 +1603,10 @@
     .transition {
         @apply transition-all duration-300 ease-linear
     }
+}
+
+* {
+    letter-spacing: .4px;
 }
 
 .swiper:hover .banner-swiper-navigate {

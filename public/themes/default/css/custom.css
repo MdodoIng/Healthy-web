@@ -359,8 +359,8 @@ iframe.w-full.rounded-2xl {
 }
 
 .f_22 {
-    font-size: 22px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .fzee {
@@ -434,8 +434,8 @@ iframe.w-full.rounded-2xl {
 }
 
 .header-nav {
-    border-bottom: 1px solid #016d6d;
-    border-top: 1px solid #016d6d;
+    border-bottom: 1px solid #016d6d12;
+    border-top: 1px solid #016d6d12;
 }
 
 .header-nav-list {
@@ -455,7 +455,7 @@ iframe.w-full.rounded-2xl {
 }
 
 .header_list li {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .total-txx {
@@ -601,9 +601,9 @@ iframe.w-full.rounded-2xl {
 }
 
 .product_nme {
-    font-size: 0.85rem !important;
+    font-size: 0.98rem !important;
     height: 73px !important;
-    font-weight: 700;
+    font-weight: 500;
     padding-top: 20px;
 }
 

@@ -19,7 +19,7 @@
             </div>
 
             <div class="flex items-center justify-between gap-5 mb-6 max-md:mb-8">
-                <div class="flex flex-wrap items-end gap-3 max-md:flex-col max-md:items-start max-md:gap-1.5">
+                <div class="flex flex-wrap items-end gap-3 max-md:flex-col max-md:items-start max-md:gap-1.5 mt-2">
                     <h3 class="text-3xl font-bold capitalize max-sm:text-lg">
                         {{ $t('label.my_wishlist') }}
                     </h3>

@@ -71,7 +71,7 @@
 
         <div class="px-2 sm:px-4 py-4 bg-[#BFFFE5] rounded-[10px] grid">
             <h3
-                class="capitalize text-[15px] font-semibold line-clamp-2 transition-all duration-300 hover:text-primary"
+                class="capitalize text-[17px] font-semibold line-clamp-2 transition-all duration-300 hover:text-primary"
             >
                 <router-link
                     class="block overflow-hidden text-ellipsis"
@@ -116,7 +116,7 @@
                     <del>{{ product.currency_price }}</del>
                 </h4>
             </div>
-            <h4 class="sm:text-[22px] font-bold mt-3" v-else>
+            <h4 class="sm:text-[24px] font-semibold mt-3" v-else>
                 <span>{{ product.currency_price }}</span>
             </h4>
         </div>

@@ -3,14 +3,14 @@
 
     <footer class="pt-12 bg-clr mobile:hidden">
         <div class="container">
-            <div class="row">
+            <div class="row gap-20">
                 <div class="col-12 md:col-4 lg:col-3 mb-6 md:mb-0">
                     <div
                         class="tablet:text-center tablet:mx-auto w-full max-w-xs"
                     >
                         <router-link :to="{ name: 'frontend.home' }">
                             <img
-                                class="mb-5 w-13 lgo_top"
+                                class="pb-5 w-13 lgo_top"
                                 :src="setting.theme_footer_logo"
                                 alt="logo"
                                 loading="lazy"
@@ -23,9 +23,10 @@
                                     class="icon_smedia"
                                     src="public/images/default/icon/marker.svg"
                                 />
-                                <span class="adds_tx font-medium text-black">{{
-                                    setting.company_address
-                                }}</span>
+                                <span
+                                    class="adds_tx font-medium text-black -mt-1"
+                                    >{{ setting.company_address }}</span
+                                >
                             </li>
                             <li class="flex gap-3">
                                 <!--<i class="lab-fill-mail text-sm flex-shrink-0 text-white"></i>-->
@@ -33,23 +34,25 @@
                                     class="icon_smedia"
                                     src="public/images/default/icon/envelope-dot.svg"
                                 />
-                                <span class="text-ftr font-medium text-black">{{
-                                    setting.company_email
-                                }}</span>
+                                <span
+                                    class="text-ftr font-medium text-black -mt-1"
+                                    >{{ setting.company_email }}</span
+                                >
                             </li>
                             <li class="flex gap-3">
                                 <img
                                     class="icon_smedia"
                                     src="public/images/default/icon/square-phone-hangup.svg"
                                 />
-                                <span class="text-ftr font-medium text-black">{{
-                                    setting.company_phone
-                                }}</span>
+                                <span
+                                    class="text-ftr font-medium text-[22px] text-black -mt-1"
+                                    >{{ setting.company_phone }}</span
+                                >
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 md:col-8 lg:col-8">
+                <div class="col-12 md:col-8 lg:col-8 lg:!flex-nowrap">
                     <div class="row">
                         <div class="col-12 sm:col-4">
                             <h4
@@ -127,9 +130,19 @@
                             </nav>
                         </div>
                         <div class="col-6 sm:col-4 mb-4 sm:mb-0">
+                            <a
+                                href=""
+                                target="_blank"
+                                class="flex ic justify-center w-full rounded-10 overflow-hidden"
+                            >
+                                <img
+                                    :src="mapImage"
+                                    class="w-full aspect-video object-cover"
+                                />
+                            </a>
                             <form
                                 @submit.prevent="saveSubscription"
-                                class="mt-5 mb-6 block subbr"
+                                class="mt-5 mb-6 block"
                             >
                                 <label class="mb-3 mt-5 font-medium text-black">
                                     {{
@@ -139,7 +152,7 @@
                                     }}
                                 </label>
                                 <div
-                                    class="flex w-full h-10 radius-10 p-1 bg-white mt-3"
+                                    class="flex w-full h-10 radius-10 p-1 bg-white mt-3 border border-[#89898952]"
                                 >
                                     <input
                                         type="email"
@@ -164,7 +177,7 @@
                                     setting.social_media_instagram ||
                                     setting.social_media_youtube
                                 "
-                                class="flex flex-wrap items-center gap-6 tablet:justify-center"
+                                class="flex flex-wrap items-center gap-6 tablet:justify-start"
                             >
                                 <a
                                     v-if="setting.social_media_facebook"
@@ -192,7 +205,7 @@
                                 ></a>
                             </nav>
                             <div v-else class="fb-iner">
-                                <div class="footer-social ftr-ml">
+                                <div class="footer-social">
                                     <ul>
                                         <li>
                                             <a href="#"
@@ -230,6 +243,7 @@ import axios from "axios";
 import alertService from "../../../services/alertService";
 import LoadingComponent from "../../frontend/components/LoadingComponent";
 import menuSectionEnum from "../../../enums/modules/menuSectionEnum";
+import mapImage from "../../../../../public/images/default/benefit/cover.png";
 import _ from "lodash";
 
 export default {

@@ -5,7 +5,7 @@
         class="pt-8 pb-24 sm:py-12 border-t border-slate-100"
     >
         <div class="container">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 del-cln">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 del-cln">
                 <div
                     v-for="benefit in benefits"
                     class="w-full max-w-[350px] relative lg:pl-9 del-bx"

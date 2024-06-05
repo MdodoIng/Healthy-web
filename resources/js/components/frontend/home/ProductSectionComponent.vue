@@ -8,7 +8,7 @@
                     <h2 class="text-2xl sm:text-4xl font-bold capitalize mb-5 adr">
                         {{ productSection.name }}
                     </h2>
-                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 rounded-3xl capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6  capitalize sm:text-base font-semibold whitespace-nowrap  text-primary transition-all duration-300 hover:bg-primary hover:text-white bg-[#71e7ad] rounded-lg">
                         {{ $t('label.show_more') }}
                     </router-link>
                 </div>
@@ -37,7 +37,7 @@
                     <h2 class="text-2xl sm:text-4xl font-bold capitalize  mb-5 adr">
                         {{ productSection.name }}
                     </h2>
-                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 rounded-3xl capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6  capitalize sm:text-base font-semibold whitespace-nowrap  text-primary transition-all duration-300 hover:bg-primary hover:text-white bg-[#71e7ad] rounded-lg">
                         {{ $t('label.show_more') }}
                     </router-link>
                 </div>

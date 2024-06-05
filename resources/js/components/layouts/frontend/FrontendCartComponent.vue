@@ -54,7 +54,7 @@
             <div v-if="carts.length > 0" class="p-4 border-t border-gray-100">
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-[18px] font-semibold capitalize">{{ $t('label.subtotal') }}</h3>
-                    <h4 class="text-[22px] font-semibold capitalize font-sans">{{ currencyFormat(subtotal, setting.site_digit_after_decimal_point,
+                    <h4 class="text-[22px] font-bold capitalize font-sans">{{ currencyFormat(subtotal, setting.site_digit_after_decimal_point,
                         setting.site_default_currency_symbol, setting.site_currency_position) }} </h4>
                 </div>
                     <router-link :to="{name: 'frontend.checkout'}" v-on:click="hideTarget('cart-canvas', 'canvas-active')" class="text-center w-full mb-3 h-12 leading-12 px-12 font-bold tracking-wide radius-10 whitespace-nowrap text-black bg-primary txt-cap hover:bg-primary">

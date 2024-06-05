@@ -378,7 +378,7 @@
 
         <div class="container py-3.5 px-4 lg:py-0 hidden lg:block">
             <!-- MenuBar Start -->
-            <nav class="header-nav hidden lg:block">
+            <nav class="header-nav hidden lg:block py-2">
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
                         <router-link
@@ -402,11 +402,11 @@
                             {{ $t("label.categories") }}
                         </button>
                         <div
-                            class="fixed top-[182px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
+                            class="fixed top-[190px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300"
                         >
                             <div class="container">
                                 <div
-                                    class="w-full rounded-b-2xl shadow-paper bg-white"
+                                    class="w-full rounded-b-2xl shadow-paper bg-white py-[18px]"
                                 >
                                     <nav
                                         class="w-full flex items-center justify-center"
@@ -460,7 +460,7 @@
                                                         class="self-start"
                                                     >
                                                         <h3
-                                                            class="text-[15px] font-semibold capitalize pb-3 border-slate-200 pl-3 pt-3"
+                                                            class="text-[15px] font-normal capitalize pb-3 border-slate-200 pl-3 pt-3"
                                                         >
                                                             <router-link
                                                                 :to="{
@@ -470,8 +470,17 @@
                                                                             children.slug,
                                                                     },
                                                                 }"
-                                                                class="hover:text-primary transition-all duration-300"
+                                                                class="hover:text-black transition-all duration-300"
                                                             >
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 320 512"
+                                                                >
+                                                                    <path
+                                                                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                                                                    />
+                                                                </svg>
+                                                                &nbsp;
                                                                 {{
                                                                     children.name
                                                                 }}
