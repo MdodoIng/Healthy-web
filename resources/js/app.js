@@ -14,6 +14,7 @@ import "../../public/themes/default/fonts/manrope/manrope.css";
 import "../../public/themes/default/fonts/iconly/iconly.css";
 import "../../public/themes/default/fonts/public/public.css";
 import "../../public/themes/default/fonts/fontawesome/fontawesome.css";
+import "../../public/themes/default/fonts/Product Sans/stylesheet.css";
 import { createHead } from "@vueuse/head";
 const head = createHead();
 
