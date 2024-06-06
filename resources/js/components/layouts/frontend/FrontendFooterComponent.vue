@@ -3,7 +3,7 @@
 
     <footer class="pt-12 bg-clr mobile:hidden">
         <div class="container">
-            <div class="row gap-20">
+            <div style="gap: 80px; justify-content: space-between;" class="row ">
                 <div class="col-12 md:col-4 lg:col-3 mb-6 md:mb-0">
                     <div
                         class="tablet:text-center tablet:mx-auto w-full max-w-xs"
