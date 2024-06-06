@@ -133,10 +133,10 @@
                             <a
                                 href=""
                                 target="_blank"
-                                class="flex ic justify-center w-full rounded-10 overflow-hidden"
+                                class="flex items-center aspect-video justify-center w-full rounded-10 overflow-hidden"
                             >
                                 <img
-                                    :src="mapImage"
+                                    src="public/images/default/benefit/cover.png"
                                     class="w-full aspect-video object-cover"
                                 />
                             </a>
@@ -243,7 +243,7 @@ import axios from "axios";
 import alertService from "../../../services/alertService";
 import LoadingComponent from "../../frontend/components/LoadingComponent";
 import menuSectionEnum from "../../../enums/modules/menuSectionEnum";
-import mapImage from "../../../../../public/images/default/benefit/cover.png";
+import "../../../../css/app.css";
 import _ from "lodash";
 
 export default {
