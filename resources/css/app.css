@@ -175,7 +175,7 @@
     .header-nav-list { @apply flex items-center justify-center gap-10 }
     .header-nav-item { @apply relative }
     .header-nav-item:hover > div { @apply scale-y-100 }
-    .header-nav-menu { @apply capitalize font-semibold py-5 }
+    .header-nav-menu { @apply capitalize font-medium py-5 }
     .header-nav-menu.router-link-active { @apply text-primary }
 
     /* BANNER */

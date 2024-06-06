@@ -426,7 +426,7 @@
                                                 activeTab =
                                                     'category_' + category.slug
                                             "
-                                            class="capitalize text-sm font-semibold tracking-wide px-5 py-4 transition-all duration-300 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0.5 before:bg-primary hover:text-primary"
+                                            class="capitalize text-sm font-medium tracking-wide px-5 py-4 transition-all duration-300 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0.5 before:bg-primary hover:text-primary"
                                             :class="{
                                                 'text-primary before:w-full before:transition-all before:duration-300':
                                                     activeTab ===

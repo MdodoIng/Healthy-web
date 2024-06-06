@@ -3,7 +3,7 @@
 
     <footer class="pt-12 bg-clr mobile:hidden">
         <div class="container">
-            <div style="gap: 80px; justify-content: space-between;" class="row ">
+            <div style="gap: 80px; justify-content: space-between" class="row">
                 <div class="col-12 md:col-4 lg:col-3 mb-6 md:mb-0">
                     <div
                         class="tablet:text-center tablet:mx-auto w-full max-w-xs"
@@ -108,7 +108,7 @@
                             </dl>
                         </div>
                         <div class="col-6 sm:col-4 mb-4 sm:mb-0">
-                            <h4
+                            <!-- <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
                                 {{ $t("label.support") }}
@@ -127,19 +127,7 @@
                                 >
                                     {{ supportPage.title }}
                                 </router-link>
-                            </nav>
-                        </div>
-                        <div class="col-6 sm:col-4 mb-4 sm:mb-0">
-                            <a
-                                href=""
-                                target="_blank"
-                                class="flex items-center aspect-video justify-center w-full rounded-[10px] overflow-hidden"
-                            >
-                                <img
-                                    src="public/images/default/benefit/cover.png"
-                                    class="w-full aspect-video object-cover"
-                                />
-                            </a>
+                            </nav> -->
                             <form
                                 @submit.prevent="saveSubscription"
                                 class="mt-5 mb-6 block"
@@ -224,6 +212,18 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-6 sm:col-4 mb-4 sm:mb-0">
+                            <a
+                                href=""
+                                target="_blank"
+                                class="flex items-center aspect-square justify-center w-full rounded-[10px] overflow-hidden"
+                            >
+                                <img
+                                    src="public/images/default/benefit/cover.png"
+                                    class="w-full aspect-video object-cover"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
