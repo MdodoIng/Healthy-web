@@ -130,7 +130,7 @@
                             </nav> -->
                             <form
                                 @submit.prevent="saveSubscription"
-                                class="mt-5 mb-6 block"
+                                class="mb-6 block"
                             >
                                 <label class="mb-3 mt-5 font-medium text-black">
                                     {{
@@ -221,7 +221,7 @@
                             >
                                 <img
                                     src="public/images/default/benefit/cover.png"
-                                    class="w-full aspect-video object-cover"
+                                    class="w-full h-full object-cover"
                                 />
                             </a>
                         </div>
