@@ -133,7 +133,7 @@
                             <a
                                 href=""
                                 target="_blank"
-                                class="flex items-center aspect-video justify-center w-full rounded-10 overflow-hidden"
+                                class="flex items-center aspect-video justify-center w-full rounded-[10px] overflow-hidden"
                             >
                                 <img
                                     src="public/images/default/benefit/cover.png"
