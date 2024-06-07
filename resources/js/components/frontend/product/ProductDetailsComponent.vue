@@ -311,12 +311,12 @@
                                         'tab_details'
                                     )
                                 "
-                                class="tab-btn active text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
+                                class="tab-btn active text-[.965rem] sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.details") }}
                             </button>
 
-                            <button
+                            <!-- <button
                                 type="button"
                                 @click.prevent="
                                     multiTargets(
@@ -329,7 +329,7 @@
                                 class="tab-btn text-sm sm:text-base font-normal leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.videos") }}
-                            </button>
+                            </button> -->
 
                             <button
                                 type="button"
@@ -345,7 +345,7 @@
                             >
                                 {{ $t("label.reviews") }}
                             </button>
-                            <button
+                            <!-- <button
                                 type="button"
                                 @click.prevent="
                                     multiTargets(
@@ -358,7 +358,7 @@
                                 class="tab-btn text-sm sm:text-base font-normal leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 radius-10 border border-[#D9DBE9]"
                             >
                                 {{ $t("label.shipping_and_return") }}
-                            </button>
+                            </button> -->
                         </nav>
 
                         <div
@@ -366,7 +366,7 @@
                             class="tab-div active p-4 sm:p-8 sm:pt-6 border-t border-[#D9DBE9]"
                         >
                             <h3
-                                class="capitalize text-2xl sm:text-3xl font-bold mb-4"
+                                class="capitalize text-2xl sm:text-3xl font-medium mb-4"
                             >
                                 {{ $t("label.product_details") }}
                             </h3>
