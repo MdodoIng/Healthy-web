@@ -2,7 +2,7 @@
     <LoadingComponent :props="loading" />
     <section class="mb-3 sm:mb-20" v-if="brands.length > 1">
         <div class="container">
-            <h2 class="capitalize text-2xl sm:text-4xl font-bold -mb-10 browse">
+            <h2 class="capitalize text-2xl sm:text-4xl font-medium -mb-10 browse">
                 {{ $t("label.popular_brands") }}
             </h2>
             <Swiper
@@ -33,7 +33,7 @@
                             />
                         </figure>
                         <span
-                            class="text-brnd sm:text-lg font-medium capitalize text-center pb-3 pt-3 block group-hover:text-primary brand-bg"
+                            class="text-brnd sm:text-lg font-normal capitalize text-center pb-3 pt-3 block group-hover:text-primary brand-bg"
                         >
                             {{ brand.name }}
                         </span>

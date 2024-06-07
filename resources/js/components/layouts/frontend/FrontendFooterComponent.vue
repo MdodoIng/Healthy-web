@@ -3,7 +3,10 @@
 
     <footer class="pt-12 bg-clr mobile:hidden">
         <div class="container">
-            <div style="gap: 80px; justify-content: space-between" class="row">
+            <div
+                style="gap: 80px; justify-content: space-between"
+                class="row lg:!flex-nowrap flex-wrap"
+            >
                 <div class="col-12 md:col-4 lg:col-3 mb-6 md:mb-0">
                     <div
                         class="tablet:text-center tablet:mx-auto w-full max-w-xs"
@@ -45,7 +48,7 @@
                                     src="public/images/default/icon/square-phone-hangup.svg"
                                 />
                                 <span
-                                    class="text-ftr font-medium text-[22px] text-black -mt-1"
+                                    class="text-ftr font-medium !text-[22px] text-black -mt-1"
                                     >{{ setting.company_phone }}</span
                                 >
                             </li>
@@ -53,8 +56,11 @@
                     </div>
                 </div>
                 <div class="col-12 md:col-8 lg:col-8 lg:!flex-nowrap">
-                    <div class="row">
-                        <div class="col-12 sm:col-4">
+                    <div
+                        style="justify-content: flex-end; gap: 40px"
+                        class="row"
+                    >
+                        <div style="max-width: 260px" class="col-12 sm:col-4">
                             <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
@@ -107,7 +113,10 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div class="col-6 sm:col-4 mb-4 sm:mb-0">
+                        <div
+                            style="max-width: 260px"
+                            class="col-6 sm:col-4 mb-4 sm:mb-0"
+                        >
                             <!-- <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
@@ -132,7 +141,7 @@
                                 @submit.prevent="saveSubscription"
                                 class="mb-6 block"
                             >
-                                <label class="mb-3 mt-5 font-medium text-black">
+                                <label class="mb-3 font-medium text-black">
                                     {{
                                         $t(
                                             "message.subscribe_to_our_newsletter"
@@ -213,7 +222,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 sm:col-4 mb-4 sm:mb-0">
+                        <div
+                            style="max-width: 260px"
+                            class="col-6 sm:col-4 mb-4 sm:mb-0"
+                        >
                             <a
                                 href=""
                                 target="_blank"

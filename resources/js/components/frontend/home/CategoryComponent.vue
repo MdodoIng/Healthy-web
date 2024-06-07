@@ -2,7 +2,7 @@
     <LoadingComponent :props="loading" />
     <section v-if="categories.length > 0" class="sm:mb-20">
         <div class="container">
-            <h2 class="capitalize text-2xl sm:text-4xl font-bold -mb-10 browse">
+            <h2 class="capitalize text-2xl sm:text-4xl font-medium -mb-10 browse">
                 {{ $t("label.browse_by_categories") }}
             </h2>
             <Swiper

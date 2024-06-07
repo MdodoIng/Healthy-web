@@ -71,7 +71,7 @@
 
         <div class="px-2 sm:px-4 py-4 bg-[#BFFFE5] rounded-[10px] grid">
             <h3
-                class="capitalize text-[17px] font-semibold line-clamp-2 transition-all duration-300 hover:text-primary"
+                class="capitalize text-[16px] font-medium line-clamp-2 transition-all duration-300 hover:text-primary"
             >
                 <router-link
                     class="block overflow-hidden text-ellipsis"

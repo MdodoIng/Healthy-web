@@ -3,7 +3,7 @@
     <section v-if="products.length > 0" class="mb-10 sm:mb-20">
         <div class="container">
             <div class="flex items-center justify-between gap-4 mb-5 sm:mb-7">
-                <h2 class="text-2xl sm:text-4xl font-bold capitalize mb-5 adr">
+                <h2 class="text-2xl sm:text-4xl font-medium capitalize mb-5 adr">
                     {{ $t("label.flash_sale") }}
                 </h2>
                 <router-link
