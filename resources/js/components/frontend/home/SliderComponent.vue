@@ -2,17 +2,41 @@
     <LoadingComponent :props="loading" />
     <section class="mb-10 sm:mb-20">
         <div class="container">
-            <Swiper v-if="sliders.length > 0" :slides-per-view="1" :speed="1000" :loop="true" :navigation="true"
-                    :pagination="{ clickable: true }" :autoplay="{ delay: 2500 }" :modules="modules"
-                    class="banner-swiper">
-                <SwiperSlide v-for="slider in sliders">
+            <Swiper
+                v-if="sliders.length > 0"
+                :slides-per-view="1"
+                :speed="1000"
+                :loop="true"
+                :navigation="true"
+                :pagination="{ clickable: true }"
+                :autoplay="{ delay: 2500 }"
+                :modules="modules"
+                class="banner-swiper"
+            >
+                <SwiperSlide
+                    v-for="slider in [
+                        `https://dev.healthytrends.ie/storage/547/healthytrends-banner3.jpg`,
+                        `https://dev.healthytrends.ie/storage/548/healthytrends-banner2.jpg`,
+                        `https://dev.healthytrends.ie/storage/566/slider_two-cover.jpg`,
+                    ]"
+                >
                     <div v-if="slider.link">
                         <a :href="slider.link">
-                            <img class="w-full rounded-2xl" :src="slider.image" alt="banner" loading="lazy">
+                            <img
+                                class="w-full rounded-2xl"
+                                :src="slider"
+                                alt="banner"
+                                loading="lazy"
+                            />
                         </a>
                     </div>
                     <div v-else>
-                        <img class="w-full rounded-2xl" :src="slider.image" alt="banner" loading="lazy">
+                        <img
+                            class="w-full rounded-2xl"
+                            :src="slider"
+                            alt="banner"
+                            loading="lazy"
+                        />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -21,9 +45,9 @@
 </template>
 
 <script>
-import 'swiper/css';
-import {Navigation, Pagination, Autoplay} from 'swiper/modules';
-import {Swiper, SwiperSlide} from 'swiper/vue';
+import "swiper/css";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
 import statusEnum from "../../../enums/modules/statusEnum";
 import LoadingComponent from "../components/LoadingComponent";
 
@@ -32,40 +56,43 @@ export default {
     components: {
         Swiper,
         SwiperSlide,
-        LoadingComponent
+        LoadingComponent,
     },
     setup() {
         return {
             modules: [Navigation, Pagination, Autoplay],
-        }
+        };
     },
     data() {
         return {
             loading: {
-                isActive: false
+                isActive: false,
             },
             sliderProps: {
                 search: {
                     paginate: 0,
-                    order_column: 'id',
-                    order_type: 'desc',
-                    status: statusEnum.ACTIVE
-                }
-            }
-        }
+                    order_column: "id",
+                    order_type: "desc",
+                    status: statusEnum.ACTIVE,
+                },
+            },
+        };
     },
     computed: {
         sliders: function () {
-            return this.$store.getters['frontendSlider/lists'];
-        }
+            return this.$store.getters["frontendSlider/lists"];
+        },
     },
     mounted() {
         this.loading.isActive = true;
-        this.$store.dispatch("frontendSlider/lists", this.sliderProps.search).then((res) => {
-            this.loading.isActive = false;
-        }).catch((err) => {
-            this.loading.isActive = false;
-        });
-    }
-}
+        this.$store
+            .dispatch("frontendSlider/lists", this.sliderProps.search)
+            .then((res) => {
+                this.loading.isActive = false;
+            })
+            .catch((err) => {
+                this.loading.isActive = false;
+            });
+    },
+};
 </script>
