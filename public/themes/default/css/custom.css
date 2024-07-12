@@ -800,7 +800,8 @@ iframe.w-full.rounded-2xl {
 }
 
 .lgo_top {
-    border-bottom: 1px solid #afafaf;
+    border-bottom: 1px solid #016d6d12;
+    ;
 }
 
 .footer-xs {

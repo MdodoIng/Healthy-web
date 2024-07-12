@@ -58,13 +58,13 @@
                 <div class="col-12 md:col-8 lg:col-8 lg:!flex-nowrap">
                     <div
                         style="justify-content: flex-end; gap: 40px"
-                        class="row"
+                        class="row lg:!flex-nowrap"
                     >
                         <div style="max-width: 260px" class="col-12 sm:col-4">
                             <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
-                                {{ $t("label.legal") }}
+                                {{ $t("label.useful_links") }}
                             </h4>
                             <nav
                                 v-if="legalPages.length > 0"
@@ -117,56 +117,11 @@
                             style="max-width: 260px"
                             class="col-6 sm:col-4 mb-4 sm:mb-0"
                         >
-                            <!-- <h4
+                            <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
-                                {{ $t("label.support") }}
+                                {{ $t("label.follow_us") }}
                             </h4>
-                            <nav
-                                v-if="supportPages.length > 0"
-                                class="flex flex-col gap-4 pt-5"
-                            >
-                                <router-link
-                                    v-for="supportPage in supportPages"
-                                    class="w-fit text-ftr font-medium capitalize text-black transition-all duration-300 hover:text-primary"
-                                    :to="{
-                                        name: 'frontend.page',
-                                        params: { slug: supportPage.slug },
-                                    }"
-                                >
-                                    {{ supportPage.title }}
-                                </router-link>
-                            </nav> -->
-                            <form
-                                @submit.prevent="saveSubscription"
-                                class="mb-6 block"
-                            >
-                                <label class="mb-3 font-medium text-black">
-                                    {{
-                                        $t(
-                                            "message.subscribe_to_our_newsletter"
-                                        )
-                                    }}
-                                </label>
-                                <div
-                                    class="flex w-full h-10 radius-10 p-1 bg-white mt-3 border border-[#89898952]"
-                                >
-                                    <input
-                                        type="email"
-                                        v-model="subscriptionProps.post.email"
-                                        :placeholder="
-                                            $t('label.your_email_address')
-                                        "
-                                        class="w-full h-full pl-3 pr-2"
-                                    />
-                                    <button
-                                        type="submit"
-                                        class="text-xs font-semibold capitalize flex-shrink-0 px-3 h-full radius-10 bg-primary text-black"
-                                    >
-                                        {{ $t("button.subscribe") }}
-                                    </button>
-                                </div>
-                            </form>
                             <nav
                                 v-if="
                                     setting.social_media_facebook ||
@@ -221,6 +176,37 @@
                                     </ul>
                                 </div>
                             </div>
+                            <span class="my-5 h-[1px] w-full bg-[#016d6d12]"></span>
+                            <form
+                                @submit.prevent="saveSubscription"
+                                class="mb-6 block"
+                            >
+                                <label class="mb-3 font-medium text-black">
+                                    {{
+                                        $t(
+                                            "message.subscribe_to_our_newsletter"
+                                        )
+                                    }}
+                                </label>
+                                <div
+                                    class="flex w-full h-10 radius-10 p-1 bg-white mt-3 border border-[#89898952]"
+                                >
+                                    <input
+                                        type="email"
+                                        v-model="subscriptionProps.post.email"
+                                        :placeholder="
+                                            $t('label.your_email_address')
+                                        "
+                                        class="w-full h-full pl-3 pr-2"
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="text-xs font-semibold capitalize flex-shrink-0 px-3 h-full radius-10 bg-primary text-black"
+                                    >
+                                        {{ $t("button.subscribe") }}
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                         <div
                             style="max-width: 260px"
@@ -232,7 +218,7 @@
                                 class="flex items-center aspect-square justify-center w-full rounded-[10px] overflow-hidden"
                             >
                                 <img
-                                    src="public/images/default/benefit/cover.png"
+                                    src="public/images/required/footer location.jpg"
                                     class="w-full h-full object-cover"
                                 />
                             </a>

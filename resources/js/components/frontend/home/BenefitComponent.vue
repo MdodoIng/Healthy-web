@@ -19,7 +19,7 @@
                         loading="lazy"
                     />
                     <h4
-                        class="text-base font-semibold capitalize mb-2 benef_tt text-white"
+                        class="text-base font-medium capitalize mb-2 benef_tt text-white"
                     >
                         {{ benefit.title }}
                     </h4>

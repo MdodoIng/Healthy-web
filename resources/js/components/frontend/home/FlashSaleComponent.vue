@@ -9,7 +9,7 @@
                 <router-link
                     v-if="products.length === 8"
                     :to="{ name: 'frontend.flashSale.products' }"
-                    class="py-2 px-4 text-sm sm:py-3 sm:px-6 capitalize sm:text-base font-semibold whitespace-nowrap text-primary transition-all duration-300 hover:bg-primary hover:text-white bg-[#71e7ad] rounded-lg"
+                    class="py-2 px-4 text-sm sm:py-3 sm:px-6 capitalize sm:text-base font-semibold whitespace-nowrap text-black transition-all duration-300 hover:bg-[#c6defc] bg-[#71e7ad] rounded-lg"
                 >
                     {{ $t("label.show_more") }}
                 </router-link>

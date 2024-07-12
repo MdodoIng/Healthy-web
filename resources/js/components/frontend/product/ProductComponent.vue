@@ -143,7 +143,7 @@
                                             <input @click="brandOption($event, categoryWiseBand.id)" type="checkbox"
                                                    :id="'brand_' + categoryWiseBand.id" class="cs-custom-checkbox">
                                             <span
-                                                class="font-medium capitalize transition-all duration-500 group-hover:text-primary">
+                                                class="font-medium capitalize transition-all duration-500 group-hover:text-primary text-[15px]">
                                                 {{ categoryWiseBand.name }}
                                             </span>
                                         </label>
