@@ -21,7 +21,7 @@
                         </router-link>
 
                         <ul class="flex flex-col gap5 pt-5">
-                            <li class="flex gap-3">
+                            <!-- <li class="flex gap-3">
                                 <img
                                     class="icon_smedia"
                                     src="public/images/default/icon/marker.svg"
@@ -30,7 +30,7 @@
                                     class="adds_tx font-medium text-black -mt-1"
                                     >{{ setting.company_address }}</span
                                 >
-                            </li>
+                            </li> -->
                             <li class="flex gap-3">
                                 <!--<i class="lab-fill-mail text-sm flex-shrink-0 text-white"></i>-->
                                 <img
@@ -53,75 +53,15 @@
                                 >
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-12 md:col-8 lg:col-8 lg:!flex-nowrap">
-                    <div
-                        style="justify-content: flex-end; gap: 40px"
-                        class="row lg:!flex-nowrap"
-                    >
-                        <div style="max-width: 260px" class="col-12 sm:col-4">
-                            <h4
-                                class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
-                            >
-                                {{ $t("label.useful_links") }}
-                            </h4>
-                            <nav
-                                v-if="legalPages.length > 0"
-                                class="flex flex-col gap-4 pt-5"
-                            >
-                                <router-link
-                                    v-for="legalPage in legalPages"
-                                    class="w-fit text-ftr font-medium capitalize text-black transition-all duration-300 hover:text-primary"
-                                    :to="{
-                                        name: 'frontend.page',
-                                        params: { slug: legalPage.slug },
-                                    }"
-                                >
-                                    {{ legalPage.title }}
-                                </router-link>
-                            </nav>
-
-                            <dl class="mt-6">
-                                <dd class="flex gap-3">
-                                    <a
-                                        target="_blank"
-                                        class="router-link-active router-link-exact-active"
-                                        v-if="setting.site_android_app_link"
-                                        :href="setting.site_android_app_link"
-                                    >
-                                        <img
-                                            class="h-8 rounded-lg"
-                                            :src="setting.image_play_store"
-                                            alt="app"
-                                            loading="lazy"
-                                        />
-                                    </a>
-                                    <a
-                                        target="_blank"
-                                        class="router-link-active router-link-exact-active"
-                                        v-if="setting.site_ios_app_link"
-                                        :href="setting.site_ios_app_link"
-                                    >
-                                        <img
-                                            class="h-8 rounded-lg"
-                                            :src="setting.image_app_store"
-                                            alt="app"
-                                            loading="lazy"
-                                        />
-                                    </a>
-                                </dd>
-                            </dl>
-                        </div>
                         <div
                             style="max-width: 260px"
-                            class="col-6 sm:col-4 mb-4 sm:mb-0"
+                            class="col-6 sm:col-4 mt-5"
                         >
-                            <h4
+                            <!-- <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
                             >
                                 {{ $t("label.follow_us") }}
-                            </h4>
+                            </h4> -->
                             <nav
                                 v-if="
                                     setting.social_media_facebook ||
@@ -176,7 +116,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <span class="my-5 h-[1px] w-full bg-[#016d6d12]"></span>
+                            <!-- <span
+                                class="my-5 h-[1px] w-full bg-[#016d6d12]"
+                            ></span>
                             <form
                                 @submit.prevent="saveSubscription"
                                 class="mb-6 block"
@@ -206,8 +148,97 @@
                                         {{ $t("button.subscribe") }}
                                     </button>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-8 lg:col-8 lg:!flex-nowrap">
+                    <div
+                        style="justify-content: flex-end; gap: 40px"
+                        class="row lg:!flex-nowrap"
+                    >
+                        <div style="max-width: 260px" class="col-12 sm:col-4">
+                            <div class="flex flex-col">
+                                <h4
+                                    class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
+                                >
+                                    <!-- {{ $t("label.useful_links") }} -->
+                                    shop 1
+                                </h4>
+                                <span
+                                    class="adds_tx font-medium text-black -mt-1"
+                                    >{{ setting.company_address }}</span
+                                >
+                            </div>
+                            <div class="flex flex-col mt-6">
+                                <h4
+                                    class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
+                                >
+                                    <!-- {{ $t("label.useful_links") }} -->
+                                    shop 2
+                                </h4>
+                                <span
+                                    class="adds_tx font-medium text-black -mt-1"
+                                    >{{ setting.company_address }}</span
+                                >
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div style="max-width: 260px" class="col-12 sm:col-4">
+                            <h4
+                                class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
+                            >
+                                {{ $t("label.useful_links") }}
+                            </h4>
+                            <nav
+                                v-if="legalPages.length > 0"
+                                class="flex flex-col gap-4 pt-5"
+                            >
+                                <router-link
+                                    v-for="legalPage in legalPages"
+                                    class="w-fit text-ftr font-medium capitalize text-black transition-all duration-300 hover:text-primary"
+                                    :to="{
+                                        name: 'frontend.page',
+                                        params: { slug: legalPage.slug },
+                                    }"
+                                >
+                                    {{ legalPage.title }}
+                                </router-link>
+                            </nav>
+
+                            <dl class="mt-6">
+                                <dd class="flex gap-3">
+                                    <a
+                                        target="_blank"
+                                        class="router-link-active router-link-exact-active"
+                                        v-if="setting.site_android_app_link"
+                                        :href="setting.site_android_app_link"
+                                    >
+                                        <img
+                                            class="h-8 rounded-lg"
+                                            :src="setting.image_play_store"
+                                            alt="app"
+                                            loading="lazy"
+                                        />
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="router-link-active router-link-exact-active"
+                                        v-if="setting.site_ios_app_link"
+                                        :href="setting.site_ios_app_link"
+                                    >
+                                        <img
+                                            class="h-8 rounded-lg"
+                                            :src="setting.image_app_store"
+                                            alt="app"
+                                            loading="lazy"
+                                        />
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+
                         <div
                             style="max-width: 260px"
                             class="col-6 sm:col-4 mb-4 sm:mb-0"
