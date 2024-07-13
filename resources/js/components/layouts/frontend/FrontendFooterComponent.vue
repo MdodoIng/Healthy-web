@@ -55,7 +55,7 @@
                         </ul>
                         <div
                             style="max-width: 260px"
-                            class="col-6 sm:col-4 mt-5"
+                            class="mt-5"
                         >
                             <!-- <h4
                                 class="text-[22px] font-semibold capitalize mb-6 text-black ftr-titl"
@@ -179,7 +179,7 @@
                                 </h4>
                                 <span
                                     class="adds_tx font-medium text-black -mt-1"
-                                    >{{ setting.company_address }}</span
+                                    >Unit 10, Artane Castle Shopping Centre, Kilmore Rd, Beaumont, Dublin 5, D05 K8X9, Ireland</span
                                 >
                             </div>
                         </div>
