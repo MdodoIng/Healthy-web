@@ -21,7 +21,7 @@
                     ]"
                 >
                     <div v-if="slider.link">
-                        <a :href="slider.link">
+                        <a :href="slider.link" class="w-full">
                             <img
                                 class="w-full rounded-2xl"
                                 :src="slider"
