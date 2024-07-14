@@ -2,29 +2,15 @@
     <LoadingComponent :props="loading" />
     <section class="mb-10 sm:mb-20">
         <div class="container">
-            <Swiper
-                v-if="sliders.length > 0"
-                :slides-per-view="1"
-                :speed="1000"
-                :loop="true"
-                :navigation="true"
-                :pagination="{ clickable: true }"
-                :autoplay="{ delay: 2500 }"
-                :modules="modules"
-                class="banner-swiper"
-            >
-                <SwiperSlide
-                    v-for="slider in [
-                        `https://dev.healthytrends.ie/storage/547/healthytrends-banner3.jpg`,
-                        `https://dev.healthytrends.ie/storage/548/healthytrends-banner2.jpg`,
-                        `https://dev.healthytrends.ie/storage/566/slider_two-cover.jpg`,
-                    ]"
-                >
+            <Swiper v-if="sliders.length > 0" :slides-per-view="1" :speed="1000" :loop="true" :navigation="true"
+                    :pagination="{ clickable: true }" :autoplay="{ delay: 2500 }" :modules="modules"
+                    class="banner-swiper">
+                <SwiperSlide v-for="slider in sliders">
                     <div v-if="slider.link">
                         <a :href="slider.link" class="w-full">
                             <img
                                 class="w-full rounded-2xl"
-                                :src="slider"
+                                :src="slider.image"
                                 alt="banner"
                                 loading="lazy"
                             />
@@ -33,7 +19,7 @@
                     <div v-else>
                         <img
                             class="w-full rounded-2xl"
-                            :src="slider"
+                            :src="slider.image"
                             alt="banner"
                             loading="lazy"
                         />
