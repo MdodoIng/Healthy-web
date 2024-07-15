@@ -24,7 +24,7 @@
                                         class="icon_hdr"
                                         src="public/images/default/icon/shipping-fast.svg"
                                     />
-                                    Free shipping on all orders under $30
+                                    Free shipping on all orders under €30
                                 </li>
                                 <li class="text_w">
                                     <img
